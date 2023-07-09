@@ -1,6 +1,6 @@
 // DO NOT DELETE COMMENTS
 //WHole is being converted from commonJS to ESM
-
+"use strict";
 //var express = require('express');
 //import express
 import express from 'express';
