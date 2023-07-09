@@ -1,10 +1,29 @@
-var express = require('express');
+// DO NOT DELETE COMMENTS
+//WHole is being converted from commonJS to ESM
+
+//var express = require('express');
+//import express
+import express from 'express';
+import path from 'node:path';
+
+//console.log(path);
+
+
+
 var port = process.env.PORT || 3000;
 var app = express(),
-path = require('path'),
-publicDir = path.join(__dirname,'public');
+//path = require('path'),
+
+// __dirname is path.resolve()
+
+//publicDir = path.join(__dirname,'public');
+publicDir = path.join(path.resolve(),'public');
+
 
 app.use(express.static(publicDir))
 
 app.listen(port);
-module.exports = app;
+
+
+//module.exports = app;
+export default app;
